@@ -1,2 +1,3 @@
-<input class="form-check-input me-1" type="checkbox" (change)="emitCheckboxStatus($event)" id="{{ label }}">
-<label class="form-check-label text-light align-text-bottom" for="{{ label }}">{{ label | titlecase }}</label>
+<div class="badge rounded-pill m-1 w-100 clickable d-flex justify-content-center" [ngClass]="checked ? 'text-bg-primary' : 'text-bg-secondary'" (click)="emitFilterStatus($event)">
+    <span class="text-capitalize align-self-center">{{ label }}</span>
+</div>

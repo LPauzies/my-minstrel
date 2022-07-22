@@ -1,5 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
+export class EventFilterStatus {
+    constructor(readonly label: string, readonly checked: boolean) {}
+}
+
 @Component({
   selector: 'app-filter-badge',
   templateUrl: './filter-badge.component.html',
@@ -12,17 +16,16 @@ export class FilterBadgeComponent implements OnInit {
   @Input() label!: string;
   
   // Output
-  @Output() changeCheckboxStatus = new EventEmitter<boolean>()
+  @Output() changeCheckboxStatus = new EventEmitter<EventFilterStatus>();
 
   constructor() {}
 
   ngOnInit(): void {
   }
 
-  emitCheckboxStatus(event?: any) {
-    event.target.blur();
-    this.checked = event.target.checked;
-    this.changeCheckboxStatus.emit(this.checked);
+  emitFilterStatus(event?: any) {
+    this.checked = !this.checked;
+    this.changeCheckboxStatus.emit(new EventFilterStatus(this.label, this.checked));
   }
 
 }

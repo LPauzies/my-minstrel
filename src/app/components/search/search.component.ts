@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { EventFilterStatus } from 'src/app/components/filter-badge/filter-badge.component';
 
 @Component({
   selector: 'app-search',
@@ -12,12 +13,11 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.filters.set("dungeon", true)
+  ngOnInit(): void {    
   }
 
-  log(): void {
-    console.log(this.filters)
+  updateFilter(event: EventFilterStatus): void {
+    this.filters.set(event.label, event.checked);
   }
 
 }
