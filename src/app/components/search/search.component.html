@@ -1,0 +1,19 @@
+<div class="p-1 position-sticky d-flex justify-content-center" style="height: 5vh">
+    <div class="container text-center p-2">
+        <div class="row p-1">
+            <input class="form-control me-2" type="search" placeholder="{{ placeholderSearch }}" aria-label="Search">
+        </div>
+        <div class="row p-1">
+            <ul class="list-group list-group-horizontal">
+                <li *ngFor="let filter of filters | keyvalue" class="list-group-item badge rounded-pill bg-secondary m-1">
+                    <app-filter-badge
+                    [checked]="filter.value"
+                    [label]="filter.key"
+                    (changeCheckboxStatus)="filter.value=$event"
+                    (click)="log()"
+                    ></app-filter-badge>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
