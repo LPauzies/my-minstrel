@@ -1,0 +1,13 @@
+#header {
+    top: 0;
+}
+
+#panel {
+    overflow: auto;
+}
+
+#player {
+    // Should always be at the bottom with 10vh height
+    bottom: 0;
+    height: 10vh;
+}

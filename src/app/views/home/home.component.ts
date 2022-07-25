@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +10,13 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    let headerHeight = document.getElementById("header")?.offsetHeight;
+    let panelHeight = window.innerHeight;
+    console.log(headerHeight, panelHeight);
   }
 
 }

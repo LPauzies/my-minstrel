@@ -8,12 +8,19 @@ import { EventFilterStatus } from 'src/app/components/filter-badge/filter-badge.
 })
 export class SearchComponent implements OnInit {
 
+  // Static through component
   placeholderSearch: string = "Search for ambient sounds...";
-  filters: Map<string, boolean> = new Map();
 
-  constructor() { }
+  // Dynamic
+  filters: Map<string, boolean>;
 
-  ngOnInit(): void {    
+  constructor() {
+    this.filters = new Map();
+  }
+
+  ngOnInit(): void {
+    // TODO fill filters
+    this.filters.set("dungeon", false);
   }
 
   updateFilter(event: EventFilterStatus): void {

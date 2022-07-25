@@ -1,7 +1,10 @@
+@import "../../../styles.scss";
+
 .clickable {
     cursor: pointer;
 }
 
 .badge {
-    min-height: 4vh;
+    min-height: 32px;
+    height: 4vh;
 }
