@@ -5,10 +5,12 @@
 #panel {
     overflow-y: auto;
     overflow-x: hidden;
+    min-height: 300px;
 }
 
 #player {
-    // Should always be at the bottom with 10vh height
+    // Should always be at the bottom with 14vh height
     bottom: 0;
-    height: 10vh;
+    height: 14vh;
+    min-height: 64px;
 }

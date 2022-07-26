@@ -1,1 +1,46 @@
-<p>player works!</p>
+<div id="player" *ngIf="youtubeVideo" class="player d-flex bg-secondary text-light h-100">
+    <div id="ytplayer" class="flex" [style.width]="playerVideoWidth">
+        <youtube-player style="pointer-events: none;"
+            [videoId]="youtubeVideo.id" 
+            (ready)="setPlayer($event)" 
+            [height]="playerHeight" 
+            [width]="playerVideoWidth"
+            [playerVars]="playerVariables"
+        >
+        </youtube-player>
+    </div>
+    <div id="info" class="flex" *ngIf="!loading" >
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-secondary text-light">{{ videoTitle }}</li>
+            <li class="list-group-item bg-secondary text-light">Keywords : <b>{{ youtubeVideo.getDisplayKeywords() }}</b></li>
+        </ul>
+    </div>
+    <div id="controls" class="p-2 flex-fill" *ngIf="!loading" >
+        <div class="row m-1">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-primary" (click)="stop()">Stop</button>
+                    <button type="button" class="btn btn-primary" (click)="play()">Play</button>
+                    <button type="button" class="btn btn-primary">3</button>
+                    <button type="button" class="btn btn-primary">4</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary">5</button>
+                    <button type="button" class="btn btn-secondary">6</button>
+                    <button type="button" class="btn btn-secondary">7</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-info">8</button>
+                </div>
+            </div>
+        </div>
+        <div class="m-1 p-2">
+            <div class="text-end">
+                {{ currentTimestampDate }} / {{ durationTimestampDate }}
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Success example" [style.width]="progressBarPercentage" [attr.aria-valuenow]="progressBar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>              
+        </div>        
+    </div>
+</div>
