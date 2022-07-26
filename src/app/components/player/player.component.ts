@@ -71,6 +71,7 @@ export class PlayerComponent implements OnInit {
   // Do stuff when player is ready to bee used
   setPlayer(player: any) {
     this.player = player.target;
+    console.log(this.player)
     this.videoTitle = this.player.videoTitle;
     this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
     this.currentTimestampDate = this.formatSeconds(this.currentTimestamp)
@@ -89,6 +90,9 @@ export class PlayerComponent implements OnInit {
         }
       )
     ).subscribe();
+    // Default behaviour
+    this.player.playVideo();
+    this.player.setLoop();
   }
 
   // Player behaviour modifier

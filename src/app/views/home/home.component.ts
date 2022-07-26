@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     this.panelMarginTop = "24vh";
     this.panelHeight = "66vh";
     this.selectedYoutubeVideo = new YoutubeVideo(
-      "u6XoHUeb56M",
+      "4cDqaLxrt6Q",
       "Prepping an ambush ain't a walk in the park. I mean, it can be if you're ambushing a park, but that's not the point. Focus and will is needed, plus a lot of clutter and time to build the cruelest, deadliest and funkiest traps ever seen. Behold, the kobolds' official headquarters!",
       ["dummy", "dummy"]
     )
