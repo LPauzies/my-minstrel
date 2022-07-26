@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-video-card',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() youtubeId!: string;
+  @Input() title!: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.title = this.truncateTitle(this.title);
+  }
+
+  truncateTitle(s: string, maxCharacter: number = 300): string {
+    return s.slice(0, maxCharacter);
   }
 
 }

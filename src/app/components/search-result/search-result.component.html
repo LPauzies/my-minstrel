@@ -1,6 +1,9 @@
-<div class="container-fluid overflow-scroll">
-    <div class="row row-cols-4">
-        <app-video-card *ngFor="let video of filteredVideos">
+<div class="container-fluid">
+    <div class="row row-cols-5">
+        <app-video-card *ngFor="let video of filteredVideos" class="col"
+        [youtubeId]="'ytid'"
+        [title]="'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'"
+        >
         </app-video-card>
     </div>
 </div>

@@ -18,7 +18,22 @@ export class SearchResultComponent implements OnInit {
 
   ngOnInit(): void {
     // TODO fill cards
-    this.videos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
+    this.filteredVideos.push("video");
     this.filteredVideos.push("video");
     this.filteredVideos.push("video");
     this.filteredVideos.push("video");
