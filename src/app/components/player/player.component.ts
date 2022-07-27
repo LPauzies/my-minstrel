@@ -83,7 +83,6 @@ export class PlayerComponent implements OnInit {
   setPlayer(player?: any) {
     // From event or refreshing
     if (player) this.player = player.target;
-    console.log(this.player)
     // Loading component
     this.loading = false;
     // Video player data
@@ -109,9 +108,10 @@ export class PlayerComponent implements OnInit {
     this.isPlaying = true;
     this.isMuted = false;
     this.isLoop = true;
-    this.currentVolume = 100;
+    this.currentVolume = 50;
     this.setVolume(this.currentVolume);
     this.play();
+    this.mute();
   }
 
   // Player behaviour modifier

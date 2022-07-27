@@ -11,6 +11,7 @@ export class YoutubeVideo {
     }
 
     get id(): string { return this._id }
+    get link(): string { return `https://www.youtube.com/watch?v=${this._id}` }
     get thumbnail(): string { return `https://img.youtube.com/vi/${this._id}/0.jpg` }
     get description(): string { return this._description }
     get keywords(): Array<string> { return this._keywords }

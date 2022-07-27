@@ -10,16 +10,23 @@
         >
         </youtube-player>
     </div>
-    <div id="info" class="flex" *ngIf="!loading" >
+    <div id="info" class="flex-fill" *ngIf="!loading" >
         <ul class="list-group list-group-flush">
-            <li class="list-group-item bg-secondary text-light">{{ videoTitle }}</li>
+            <li class="list-group-item bg-secondary text-light">
+                <div class="d-flex">
+                    <span class="me-auto">{{ videoTitle }}</span>
+                    <a class="btn btn-secondary" [href]="youtubeVideo.link"><i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+                
+                
+            </li>
             <li class="list-group-item bg-secondary text-light">Keywords : <b>{{ youtubeVideo.getDisplayKeywords() }}</b></li>
         </ul>
     </div>
-    <div id="controls" class="p-2 flex-fill" *ngIf="!loading" >
+    <div id="controls" class="flex p-2" *ngIf="!loading" >
         <div class="btn-toolbar p-1 row" role="toolbar" aria-label="controls">
-            <div class="btn-group me-2 col" role="group" aria-label="controlVideo">
-                <button type="button" class="btn btn-outline-light" (click)="stop()" onclick="this.blur();"><i class="bi bi-stop-circle-fill"></i></button>
+            <div class="btn-group col m-1" role="group" aria-label="controlVideo">
+                <button type="button" class="btn btn-outline-light" (click)="stop()"><i class="bi bi-stop-circle-fill"></i></button>
                 <button type="button" class="btn btn-outline-light" (click)="play()" *ngIf="!isPlaying"><i class="bi bi-play-circle-fill"></i></button>
                 <button type="button" class="btn btn-outline-light" (click)="pause()" *ngIf="isPlaying"><i class="bi bi-pause-circle-fill"></i></button>
                 <button type="button" class="btn btn-outline-light" (click)="mute()" *ngIf="!isMuted"><i class="bi bi-volume-mute-fill"></i></button>
@@ -27,7 +34,7 @@
                 <button type="button" class="btn btn-outline-light" (click)="setLoop(true)" *ngIf="!isLoop"><i class="bi bi-arrow-repeat"></i></button>
                 <button type="button" class="btn btn-outline-light" (click)="setLoop(false)" *ngIf="isLoop"><i class="bi bi-arrow-counterclockwise"></i></button>
             </div>
-            <div class="btn-group me-2 col" role="group" aria-label="controlVolume">
+            <div class="btn-group col m-1" role="group" aria-label="controlVolume">
                 <button type="button" class="btn btn-outline-light" (click)="downVolume();"><i class="bi bi-volume-down-fill"></i></button>
                 <button type="button" class="btn btn-outline-light disable">{{ currentVolume }}%</button>
                 <button type="button" class="btn btn-outline-light" (click)="upVolume();"><i class="bi bi-volume-up-fill"></i></button>
