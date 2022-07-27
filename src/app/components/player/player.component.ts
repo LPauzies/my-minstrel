@@ -18,18 +18,22 @@ export class PlayerComponent implements OnInit {
   timerSubscription!: Subscription;
 
   // Dynamic content
-  player!: any;
   playerHeight!: number;
   playerVideoWidth!: number;
   videoTitle?: string;
 
-  // Progress bar
+  // Player related
+  player!: any;
   currentTimestamp!: number;
   currentTimestampDate!: string;
   durationTimestamp!: number;
   durationTimestampDate!: string;
   progressBar!: number;
   progressBarPercentage!: string;
+  isPlaying!: boolean;
+  isMuted!: boolean;
+  currentVolume!: number;
+  isLoop!: boolean;
 
   // Static
   playerVariables = {
@@ -44,12 +48,14 @@ export class PlayerComponent implements OnInit {
     showinfo: 0
   };
 
+  constructor() {}
+
+  // Angular hooks
   ngOnChanges(changes: SimpleChanges) {
     // To manage changement of value of youtube video id
-    console.log(changes);
+    // Refresh the player
+    if (this.player) this.setPlayer();
   }
-
-  constructor() {}
 
   ngOnInit(): void {
     this.onResize();
@@ -59,19 +65,28 @@ export class PlayerComponent implements OnInit {
     this.timerSubscription.unsubscribe();
   }
 
+  // Listeners
   @HostListener('window:resize', ['$event'])
   onResize() {
     let playerHeight = document.getElementById("player")?.offsetHeight;
-    if (playerHeight !== undefined) {
+    if (playerHeight) {
       this.playerHeight = playerHeight;
       this.playerVideoWidth = Math.ceil(this.playerHeight * 1.33);
     }
   }
 
+  onPlayerStateChange(event: any) {
+    if (event.data === 0) (this.isLoop) ? setTimeout(() => this.play(), 1000) : this.stop();
+  }
+
   // Do stuff when player is ready to bee used
-  setPlayer(player: any) {
-    this.player = player.target;
+  setPlayer(player?: any) {
+    // From event or refreshing
+    if (player) this.player = player.target;
     console.log(this.player)
+    // Loading component
+    this.loading = false;
+    // Video player data
     this.videoTitle = this.player.videoTitle;
     this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
     this.currentTimestampDate = this.formatSeconds(this.currentTimestamp)
@@ -79,8 +94,8 @@ export class PlayerComponent implements OnInit {
     this.durationTimestampDate = this.formatSeconds(this.durationTimestamp)
     this.progressBar = this.toPercentage(this.currentTimestamp, this.durationTimestamp);
     this.progressBarPercentage = `${this.progressBar}%`;
-    this.loading = false;
-    this.timerSubscription = timer(0, 1000).pipe(
+    // Subscription to refresh data every seconds (progress bar)
+    this.timerSubscription = timer(0, 100).pipe(
       map(
         () => {
           this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
@@ -91,33 +106,48 @@ export class PlayerComponent implements OnInit {
       )
     ).subscribe();
     // Default behaviour
-    this.player.playVideo();
-    this.player.setLoop();
+    this.isPlaying = true;
+    this.isMuted = false;
+    this.isLoop = true;
+    this.currentVolume = 100;
+    this.setVolume(this.currentVolume);
+    this.play();
   }
 
   // Player behaviour modifier
-  play() { this.player.playVideo() }
-  mute() { this.player.mute() }
-  unmute() { this.player.unmute() }
-  pause() { this.player.pauseVideo() }
-  stop() { this.player.stopVideo() }
-  loadVideoById(id: string) { this.player.loadVideoById(id) }
-  setVolume(volume: number) { this.player.setVolume(volume) }
+  play() { this.player.playVideo(); this.isPlaying = true; }
+  mute() { this.player.mute(); this.isMuted = true; }
+  unmute() { 
+    if (this.currentVolume == 0) return;
+    this.player.unMute(); 
+    this.isMuted = false; 
+  }
+  pause() { this.player.pauseVideo(); this.isPlaying = false; }
+  stop() { this.player.stopVideo(); this.isPlaying = false; }
+  loadVideoById(id: string) { this.player.loadVideoById(id); }
+  setVolume(volume: number) { this.player.setVolume(volume); }
+  downVolume() {
+    this.currentVolume -= 5;
+    if (this.currentVolume <= 0) {
+      this.mute();
+      this.currentVolume = 0;
+    }
+    else this.player.setVolume(this.currentVolume);
+  }
+  upVolume() {
+    this.currentVolume += 5;
+    if (this.currentVolume > 0) this.unmute();
+    if (this.currentVolume >= 100) this.currentVolume = 100;
+    this.player.setVolume(this.currentVolume);
+  }
+  setLoop(value: boolean) { this.isLoop = value; }
 
   // Progress Bar
   toPercentage(currentSeconds: number, maxSeconds: number): number {
-    return Math.ceil((currentSeconds / maxSeconds) * 100)
+    return (currentSeconds / maxSeconds) * 100
   }
   formatSeconds(s: number) {
     return new Date(s * 1000).toISOString().slice(11, 19);
   }
 
-  // Player checker
-  isMuted(): boolean { return this.player.isMuted() }
-
-  // Player information
-  getVideoTitle(): string { return this.player.videoTitle }
-  getVolume(): number { return this.player.getVolume() }
-  getCurrentTime(): number { return this.player.getCurrentTime() }
-  getDuration(): number { return this.player.getDuration() }
 }
