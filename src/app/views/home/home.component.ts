@@ -15,10 +15,16 @@ export class HomeComponent implements OnInit {
 
   selectedYoutubeVideo!: YoutubeVideo;
 
+  // Filters
+  filters: Array<string>;
+  search: string;
+
   constructor() {
     // First values by default
     this.panelMarginTop = "24vh";
     this.panelHeight = "62vh";
+    this.filters = [];
+    this.search = "";
   }
 
   ngOnInit(): void {
@@ -37,6 +43,11 @@ export class HomeComponent implements OnInit {
 
   updateVideoPlayer(event: EventChangePlayerVideo) {
     this.selectedYoutubeVideo = event.youtubeVideo;
+  }
+
+  toParent(event: any) {
+    this.filters = event.filters;
+    this.search = event.search;
   }
 
 }
