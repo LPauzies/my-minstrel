@@ -23,7 +23,7 @@ export class FilterBadgeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  emitFilterStatus(event?: any) {
+  emitFilterStatus() {
     this.checked = !this.checked;
     this.changeCheckboxStatus.emit(new EventFilterStatus(this.label, this.checked));
   }

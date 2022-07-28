@@ -82,27 +82,8 @@ export class PlayerComponent implements OnInit {
   /* Player setup */
   setPlayer(event?: any) {
     this.player = event.target;
-    // Go to start of the video at the beginning
-    this.seekTo(0);
-    // Video player data
-    this.videoTitle = this.player.videoTitle;
-    this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
-    this.currentTimestampDate = this.formatSeconds(this.currentTimestamp);
-    this.durationTimestamp = Math.ceil(this.player.getDuration());
-    this.durationTimestampDate = this.formatSeconds(this.durationTimestamp);
-    this.progressBar = this.toPercentage(this.currentTimestamp, this.durationTimestamp);
-    this.progressBarPercentage = `${this.progressBar}%`;
-    // Subscription to refresh data every 100ms (progress bar)
-    this.timerSubscription = timer(0, 100).pipe(
-      map(
-        () => {
-          this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
-          this.currentTimestampDate = this.formatSeconds(this.currentTimestamp);
-          this.progressBar = this.toPercentage(this.currentTimestamp, this.durationTimestamp);
-          this.progressBarPercentage = `${this.progressBar}%`;
-        }
-      )
-    ).subscribe();
+    // Make the subscription to update UI elements
+    this.subscribe();
     // Default behaviour
     this.unmute();
     this.setLoop(true);
@@ -117,7 +98,7 @@ export class PlayerComponent implements OnInit {
   // Video control
   play() { this.player.playVideo(); this.isPlaying = true; }
   pause() { this.player.pauseVideo(); this.isPlaying = false; }
-  stop() { this.player.stopVideo(); this.isPlaying = false; }
+  stop() { this.player.pauseVideo(); this.seekTo(0); this.isPlaying = false; }
   loadVideoById(id: string) { this.player.loadVideoById(id); }
   setLoop(value: boolean) { this.isLoop = value; }
   seekTo(value: number) { this.player.seekTo(value); }
@@ -150,6 +131,34 @@ export class PlayerComponent implements OnInit {
   }
   formatSeconds(s: number): string {
     return new Date(s * 1000).toISOString().slice(11, 19);
+  }
+  subscribe() {
+    // Update video title
+    this.videoTitle = this.player.videoTitle
+    // Go to start of the video at the beginning
+    this.seekTo(0);
+    // Video player data
+    this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
+    this.currentTimestampDate = this.formatSeconds(this.currentTimestamp);
+    this.durationTimestamp = Math.ceil(this.player.getDuration());
+    this.durationTimestampDate = this.formatSeconds(this.durationTimestamp);
+    this.progressBar = this.toPercentage(this.currentTimestamp, this.durationTimestamp);
+    this.progressBarPercentage = `${this.progressBar}%`;
+    this.timerSubscription = timer(0, 100).pipe(
+      map(
+        () => {
+          this.currentTimestamp = Math.ceil(this.player.getCurrentTime());
+          this.currentTimestampDate = this.formatSeconds(this.currentTimestamp);
+          this.durationTimestamp = Math.ceil(this.player.getDuration());
+          this.durationTimestampDate = this.formatSeconds(this.durationTimestamp);
+          this.progressBar = this.toPercentage(this.currentTimestamp, this.durationTimestamp);
+          this.progressBarPercentage = `${this.progressBar}%`;
+        }
+      )
+    ).subscribe();
+  }
+  unsubscribe() {
+    this.timerSubscription.unsubscribe();
   }
 
 }

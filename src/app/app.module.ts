@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { NgxRerenderModule } from 'ngx-rerender';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
@@ -28,7 +29,8 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,
-    NgxRerenderModule
+    NgxRerenderModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [HomeComponent]

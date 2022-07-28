@@ -2,7 +2,7 @@
     <div class="container text-center p-2">
         <div class="row p-1">
             <div class="container">
-                <input class="form-control me-2" type="search" placeholder="{{ placeholderSearch }}" aria-label="Search">
+                <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" type="search" placeholder="{{ placeholderSearch }}" aria-label="search">
             </div>
         </div>
         <div class="row p-1">
