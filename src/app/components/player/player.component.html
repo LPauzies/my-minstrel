@@ -1,6 +1,6 @@
 <div id="player" *ngIf="youtubeVideo" class="player d-flex bg-secondary text-light h-100">
     <div id="ytplayer" class="flex" [style.width]="playerVideoWidth">
-        <youtube-player style="pointer-events: none;"
+        <youtube-player *mcRerender="trigger" style="pointer-events: none;"
             [videoId]="youtubeVideo.id" 
             (ready)="setPlayer($event)"
             (stateChange)="onPlayerStateChange($event)"
@@ -15,10 +15,8 @@
             <li class="list-group-item bg-secondary text-light">
                 <div class="d-flex">
                     <span class="me-auto">{{ videoTitle }}</span>
-                    <a class="btn btn-secondary" [href]="youtubeVideo.link"><i class="bi bi-box-arrow-up-right"></i></a>
-                </div>
-                
-                
+                    <a class="btn btn-secondary" [href]="youtubeVideo.link" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                </div>                
             </li>
             <li class="list-group-item bg-secondary text-light">Keywords : <b>{{ youtubeVideo.getDisplayKeywords() }}</b></li>
         </ul>
@@ -46,7 +44,7 @@
             </div>
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-label="Success example" [style.width]="progressBarPercentage" [attr.aria-valuenow]="progressBar" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>              
+              </div>
         </div>        
     </div>
 </div>

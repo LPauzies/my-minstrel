@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { YoutubeVideo } from 'src/app/domains/youtubeVideo';
+import { truncateRelativeToWidthElement } from 'src/app/domains/utils';
 
 @Component({
   selector: 'app-video-card',
@@ -7,18 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class VideoCardComponent implements OnInit {
 
-  @Input() youtubeId!: string;
-  @Input() title!: string;
+  @Input() youtubeVideo!: YoutubeVideo;
 
   constructor() {
   }
 
   ngOnInit(): void {
-    this.title = this.truncateTitle(this.title);
   }
 
-  truncateTitle(s: string, maxCharacter: number = 300): string {
-    return s.slice(0, maxCharacter);
+  truncateRelativeToWidthElement(s: string, idRelativeElement: string): string {
+    return truncateRelativeToWidthElement(s, idRelativeElement)
   }
 
 }

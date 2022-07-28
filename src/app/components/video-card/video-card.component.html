@@ -1,6 +1,6 @@
 <div class="card text-bg-dark bg-white" >
-    <img src="https://img.youtube.com/vi/_bqycYHnErA/0.jpg" class="card-img" alt="thumbnail">
-    <div class="card-img-overlay">
-        <span class="bottom">{{ title }}</span>
+    <img [src]="youtubeVideo.thumbnail" class="card-img" alt="thumbnail">
+    <div id="overlay" class="card-img-overlay">
+        <span class="bottom">{{ truncateRelativeToWidthElement(youtubeVideo.title, 'overlay') }}</span>
     </div>
 </div>

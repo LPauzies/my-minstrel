@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { EventChangePlayerVideo } from 'src/app/components/search-result/search-result.component';
 import { YoutubeVideo } from 'src/app/domains/youtubeVideo';
 
 @Component({
@@ -18,11 +19,6 @@ export class HomeComponent implements OnInit {
     // First values by default
     this.panelMarginTop = "24vh";
     this.panelHeight = "62vh";
-    this.selectedYoutubeVideo = new YoutubeVideo(
-      "lTTajzrSkCw",
-      "Prepping an ambush ain't a walk in the park. I mean, it can be if you're ambushing a park, but that's not the point. Focus and will is needed, plus a lot of clutter and time to build the cruelest, deadliest and funkiest traps ever seen. Behold, the kobolds' official headquarters!",
-      ["dummy", "dummy"]
-    )
   }
 
   ngOnInit(): void {
@@ -37,6 +33,10 @@ export class HomeComponent implements OnInit {
       this.panelMarginTop = `${headerHeight}px`;
       this.panelHeight = `${maxHeight - headerHeight - playerHeight}px`;
     }
+  }
+
+  updateVideoPlayer(event: EventChangePlayerVideo) {
+    this.selectedYoutubeVideo = event.youtubeVideo;
   }
 
 }
