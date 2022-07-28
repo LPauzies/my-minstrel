@@ -51,11 +51,9 @@ export class PlayerComponent implements OnInit {
 
   constructor() {}
 
-  // Angular hooks
+  /* Angular hooks */
   ngOnChanges(changes: SimpleChanges) {
     // To manage changement of value of youtube video id
-    // Refresh the player
-    console.log(changes);
     if (this.player && changes['youtubeVideo'].currentValue) this.trigger++;
   }
 
@@ -67,7 +65,7 @@ export class PlayerComponent implements OnInit {
     this.timerSubscription.unsubscribe();
   }
 
-  // Listeners
+  /* Listeners */
   @HostListener('window:resize', ['$event'])
   onResize() {
     let playerHeight = document.getElementById("player")?.offsetHeight;
@@ -81,7 +79,7 @@ export class PlayerComponent implements OnInit {
     if (event.data === 0) (this.isLoop) ? setTimeout(() => this.play(), 1000) : this.stop();
   }
 
-  // Do stuff when player is ready to be used
+  /* Player setup */
   setPlayer(event?: any) {
     this.player = event.target;
     // Go to start of the video at the beginning
@@ -113,18 +111,23 @@ export class PlayerComponent implements OnInit {
     this.play();
   }
 
-  // Player behaviour modifier
+  /* Player controls binding */
+  // Loading metadata
   setLoading(value: boolean) { this.loading = value; }
+  // Video control
   play() { this.player.playVideo(); this.isPlaying = true; }
+  pause() { this.player.pauseVideo(); this.isPlaying = false; }
+  stop() { this.player.stopVideo(); this.isPlaying = false; }
+  loadVideoById(id: string) { this.player.loadVideoById(id); }
+  setLoop(value: boolean) { this.isLoop = value; }
+  seekTo(value: number) { this.player.seekTo(value); }
+  // Volume control
   mute() { this.player.mute(); this.isMuted = true; }
   unmute() { 
     if (this.currentVolume == 0) return;
     this.player.unMute();
     this.isMuted = false;
   }
-  pause() { this.player.pauseVideo(); this.isPlaying = false; }
-  stop() { this.player.stopVideo(); this.isPlaying = false; }
-  loadVideoById(id: string) { this.player.loadVideoById(id); }
   setVolume(volume: number) { this.currentVolume = volume; this.player.setVolume(this.currentVolume); }
   downVolume() {
     this.currentVolume -= 5;
@@ -140,10 +143,8 @@ export class PlayerComponent implements OnInit {
     if (this.currentVolume >= 100) this.currentVolume = 100;
     this.player.setVolume(this.currentVolume);
   }
-  setLoop(value: boolean) { this.isLoop = value; }
-  seekTo(value: number) { this.player.seekTo(value); }
 
-  // Progress Bar
+  /* Progress Bar related */
   toPercentage(currentSeconds: number, maxSeconds: number): number {
     return (currentSeconds / maxSeconds) * 100
   }
