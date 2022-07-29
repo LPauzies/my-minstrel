@@ -1,7 +1,18 @@
 {
     "filters": [
+        "music",
+        "battle",
         "campfire",
+        "cold",
+        "desert",
         "dungeon",
-        "fantasy"
+        "forest",
+        "jungle",
+        "ocean",
+        "medieval city",
+        "planes",
+        "steampunk",
+        "haunted",
+        "underground"
     ]
 }
