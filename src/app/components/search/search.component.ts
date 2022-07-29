@@ -14,7 +14,7 @@ export class EventSearchFilter {
 export class SearchComponent implements OnInit {
 
   // Static through component
-  placeholderSearch: string = "Search for ambient sounds...";
+  placeholderSearch: string = "Search here...";
   research: string = "";
 
   // Dynamic
