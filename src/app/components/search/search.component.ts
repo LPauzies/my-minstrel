@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { EventFilterStatus } from 'src/app/components/filter-badge/filter-badge.component';
+import { DataService } from 'src/app/services/data.service';
 
 export class EventSearchFilter {
   constructor(readonly search: string, readonly filters: Array<string>) {}
@@ -22,16 +23,18 @@ export class SearchComponent implements OnInit {
   // Output
   @Output() changeSearchFilter = new EventEmitter<EventSearchFilter>();
 
-  constructor() {
+  constructor(
+    private dataService: DataService
+  ) {
     this.filters = new Map();
+    this.dataService.getFilters().subscribe(
+      data => data.forEach(
+        filter => this.filters.set(filter.value, false)
+      )
+    )
   }
 
-  ngOnInit(): void {
-    // TODO fill filters
-    this.filters.set("dungeon", false);
-    this.filters.set("fantasy", false);
-    this.filters.set("campfire", false);
-  }
+  ngOnInit(): void {}
 
   /* Angular events */
   onResearch(newResearch: string): void {

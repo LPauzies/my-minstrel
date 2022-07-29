@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { YoutubeVideo } from 'src/app/domains/youtubeVideo';
+import { DataService } from 'src/app/services/data.service';
 
 export class EventChangePlayerVideo {
   constructor(readonly youtubeVideo: YoutubeVideo) {}
@@ -13,8 +14,8 @@ export class EventChangePlayerVideo {
 export class SearchResultComponent implements OnInit {
 
   // Dynamic
-  videos: Array<YoutubeVideo>;
-  filteredVideos: Array<YoutubeVideo>;
+  videos!: Array<YoutubeVideo>;
+  filteredVideos!: Array<YoutubeVideo>;
 
   // Input values from search bar
   @Input() filters!: Array<string>;
@@ -23,36 +24,38 @@ export class SearchResultComponent implements OnInit {
   // Output
   @Output() changePlayerVideo = new EventEmitter<EventChangePlayerVideo>();
 
-  constructor() {
-    this.videos = new Array();
-    this.filteredVideos = new Array();
+  constructor(
+    private dataService: DataService,
+  ) {
+    this.dataService.getData().subscribe(
+      data => {
+        this.videos = data;
+        this.filteredVideos = data;
+      }
+    )
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    // Reset filter
+    this.filteredVideos = this.videos; 
+    // Create search filter
     let filterSearch = this.search.trim().split(" ").filter(e => e.trim() !== "");
-    console.log(filterSearch)
-    if (this.filters) {
+    // If there is filters on keyword
+    if (this.filters.length > 0) {
       this.filteredVideos = this.videos.filter(
         // Check that at least one keyword is on filters chosen by user
-        e => e.keywords.find(keyword => this.filters.includes(keyword))
+        e => e.keywords.find(keyword => this.filters.map(e => e.toLocaleLowerCase()).includes(keyword.toLocaleLowerCase()))
       )
     }
-    if (filterSearch) {
+    // If there is filters on search
+    if (filterSearch.length > 0) {
       this.filteredVideos = this.filteredVideos.filter(
-        e => filterSearch.find(searchKeyword => e.title.includes(searchKeyword))
+        e => filterSearch.find(searchKeyword => e.title.toLocaleLowerCase().includes(searchKeyword.toLocaleLowerCase()))
       )
     }
-    
   }
 
   ngOnInit(): void {
-    // TODO fill cards
-    let a = new YoutubeVideo("mvcmDk5Pjok", "Kobold Junkyard Ambience", ["junkyard", "fantasy"])
-    let b = new YoutubeVideo("3ybetTY0ZSg", "Watchtower Night | Campfire, Creaking, Crickets, Quiet ASMR Ambience | 3 Hours", ["campfire", "creaking", "crickets", "asmr"])
-    this.videos.push(a);
-    this.videos.push(b);
-    this.filteredVideos.push(a);
-    this.filteredVideos.push(b);
   }
 
   emitFilterStatus(id: string) {

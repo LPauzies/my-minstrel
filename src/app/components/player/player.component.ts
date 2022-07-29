@@ -111,7 +111,7 @@ export class PlayerComponent implements OnInit {
   }
   setVolume(volume: number) { this.currentVolume = volume; this.player.setVolume(this.currentVolume); }
   downVolume() {
-    this.currentVolume -= 5;
+    this.currentVolume -= 10;
     if (this.currentVolume <= 0) {
       this.mute();
       this.currentVolume = 0;
@@ -119,7 +119,7 @@ export class PlayerComponent implements OnInit {
     else this.player.setVolume(this.currentVolume);
   }
   upVolume() {
-    this.currentVolume += 5;
+    this.currentVolume += 10;
     if (this.currentVolume > 0) this.unmute();
     if (this.currentVolume >= 100) this.currentVolume = 100;
     this.player.setVolume(this.currentVolume);
