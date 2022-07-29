@@ -15,21 +15,28 @@ export class DataService {
 
     private dataSubject = new BehaviorSubject<Array<YoutubeVideo>>(DataService.DATA);
     private currentData = this.dataSubject.asObservable();
-    private filterSubject = new BehaviorSubject<Array<FilterVideo>>(DataService.FILTERS);
-    private currentFilters = this.filterSubject.asObservable();
+    private filterMusicSubject = new BehaviorSubject<Array<FilterVideo>>(DataService.FILTERS);
+    private currentMusicFilters = this.filterMusicSubject.asObservable();
+    private filterAmbientSubject = new BehaviorSubject<Array<FilterVideo>>(DataService.FILTERS);
+    private currentAmbientFilters = this.filterAmbientSubject.asObservable();
 
     constructor(
         private httpClient: HttpClient
     ) {
         this.httpClient.get(`./assets/data/data.json`).subscribe(json => this.dataSubject.next(Transformer.fromJSONtoYoutubeVideos(json)));
-        this.httpClient.get(`./assets/data/filters.json`).subscribe(json => this.filterSubject.next(Transformer.fromJSONtoFilter(json)));
+        this.httpClient.get(`./assets/data/filters.json`).subscribe(json => this.filterMusicSubject.next(Transformer.fromJSONtoFilter(json, "music")));
+        this.httpClient.get(`./assets/data/filters.json`).subscribe(json => this.filterAmbientSubject.next(Transformer.fromJSONtoFilter(json, "ambient")));
     }
 
     getData(): Observable<Array<YoutubeVideo>> {
         return this.currentData;
     }
 
-    getFilters(): Observable<Array<FilterVideo>> {
-        return this.currentFilters;
+    getMusicFilters(): Observable<Array<FilterVideo>> {
+        return this.filterMusicSubject;
+    }
+
+    getAmbientFilters(): Observable<Array<FilterVideo>> {
+        return this.filterMusicSubject;
     }
 }

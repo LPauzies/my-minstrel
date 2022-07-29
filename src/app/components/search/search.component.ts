@@ -19,6 +19,7 @@ export class SearchComponent implements OnInit {
 
   // Dynamic
   filters: Map<string, boolean>;
+  musicFilters: Map<string, boolean>;
 
   // Output
   @Output() changeSearchFilter = new EventEmitter<EventSearchFilter>();
@@ -27,9 +28,15 @@ export class SearchComponent implements OnInit {
     private dataService: DataService
   ) {
     this.filters = new Map();
-    this.dataService.getFilters().subscribe(
+    this.dataService.getAmbientFilters().subscribe(
       data => data.forEach(
         filter => this.filters.set(filter.value, false)
+      )
+    )
+    this.musicFilters = new Map();
+    this.dataService.getMusicFilters().subscribe(
+      data => data.forEach(
+        filter => this.musicFilters.set(filter.value, false)
       )
     )
   }
