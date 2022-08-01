@@ -1,19 +1,23 @@
-<div class="p-1 d-flex justify-content-center w-100 searchBar">
-    <div class="container text-center p-2">
-        <div class="row p-1">
-            <div class="container" role="search">
-                <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" placeholder="{{ placeholderSearch }}" type="search" aria-label="search">
+<div class="p-2 container justify-content-center" role="search">
+    <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" placeholder="{{ placeholderSearch }}" type="search" aria-label="search">
+</div>
+<div class="p-2 container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="form-check" *ngFor="let macroFilter of macroFilters | keyvalue">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" [checked]="macroFilter.value">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  {{ macroFilter.key | uppercase }}
+                </label>
             </div>
         </div>
-        <div class="row p-1">
-            <div class="container">
-                <div class="row row-cols-6">
-                    <app-filter-badge *ngFor="let filter of filters | keyvalue"
-                        [label]="filter.key"
-                        [checked]="filter.value"
-                        (changeCheckboxStatus)="updateFilter($event)"
-                    ></app-filter-badge>
-                </div>
+        <div class="col-9">
+            <div class="row row-cols-6">
+                <app-filter-badge *ngFor="let filter of microFilters | keyvalue"
+                    [label]="filter.key"
+                    [checked]="filter.value"
+                    (changeCheckboxStatus)="updateFilter($event)"
+                ></app-filter-badge>
             </div>
         </div>
     </div>
