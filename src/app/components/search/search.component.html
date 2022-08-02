@@ -1,35 +1,23 @@
-<div class="p-1 d-flex justify-content-center w-100">
-    <div class="container text-center">
-        <div class="row">
-            <div class="container" role="search">
-                <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" placeholder="{{ placeholderSearch }}" type="search" aria-label="search">
-            </div>
-        </div>
-    </div>
+<div class="p-2 container justify-content-center" role="search">
+    <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" placeholder="{{ placeholderSearch }}" type="search" aria-label="search">
 </div>
-<div class="p-2 container-fluid justify-content-center w-100">
+<div class="p-2 container-fluid">
     <div class="row">
         <div class="col-3">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <div class="form-check" *ngFor="let macroFilter of macroFilters | keyvalue">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" [checked]="macroFilter.value">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  {{ macroFilter.key | uppercase }}
+                </label>
             </div>
         </div>
         <div class="col-9">
-            <div class="container-fluid text-center p-2 row">
-                <div class="row row-cols-6">
-                    <app-filter-badge *ngFor="let filter of filters | keyvalue"
-                        [label]="filter.key"
-                        [checked]="filter.value"
-                        (changeCheckboxStatus)="updateFilter($event)"
-                    ></app-filter-badge>
-                </div>
+            <div class="row row-cols-6">
+                <app-filter-badge *ngFor="let filter of microFilters | keyvalue"
+                    [label]="filter.key"
+                    [checked]="filter.value"
+                    (changeCheckboxStatus)="updateFilter($event)"
+                ></app-filter-badge>
             </div>
         </div>
     </div>

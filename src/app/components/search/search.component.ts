@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { EventFilterStatus } from 'src/app/components/filter-badge/filter-badge.component';
+import { FilterVideo } from 'src/app/domains/filterVideo';
 import { DataService } from 'src/app/services/data.service';
 
 export class EventSearchFilter {
@@ -18,8 +19,8 @@ export class SearchComponent implements OnInit {
   research: string = "";
 
   // Dynamic
-  filters: Map<string, boolean>;
-  musicFilters: Map<string, boolean>;
+  macroFilters: Map<string, boolean>;
+  microFilters: Map<string, boolean>;
 
   // Output
   @Output() changeSearchFilter = new EventEmitter<EventSearchFilter>();
@@ -27,18 +28,21 @@ export class SearchComponent implements OnInit {
   constructor(
     private dataService: DataService
   ) {
-    this.filters = new Map();
-    this.dataService.getAmbientFilters().subscribe(
-      data => data.forEach(
-        filter => this.filters.set(filter.value, false)
-      )
-    )
-    this.musicFilters = new Map();
-    this.dataService.getMusicFilters().subscribe(
-      data => data.forEach(
-        filter => this.musicFilters.set(filter.value, false)
-      )
-    )
+    this.macroFilters = new Map();
+    this.microFilters = new Map();
+    this.dataService.getFilters().subscribe(
+      data => {
+        let macroFilters = Object.keys(data.filters).map(e => new FilterVideo(e));
+        let defaultMacroFilter = macroFilters[0];
+        macroFilters.forEach(
+          macroFilter => this.macroFilters.set(macroFilter.value, false)
+        )
+        this.macroFilters.set(defaultMacroFilter.value, true)
+        data.filters[defaultMacroFilter.value].forEach(
+          (microFilter: string) => this.microFilters.set(microFilter, false)
+        )
+      }
+    );
   }
 
   ngOnInit(): void {}
@@ -50,12 +54,12 @@ export class SearchComponent implements OnInit {
   }
 
   updateFilter(event: EventFilterStatus): void {
-    this.filters.set(event.label, event.checked);
+    this.microFilters.set(event.label, event.checked);
     this.changeSearchFilter.emit(new EventSearchFilter(this.research, this.filtersToArray()));
   }
 
   filtersToArray(): Array<string> {
-    return Array.from(this.filters.entries()).filter(e => e[1]).map(e => e[0]);
+    return Array.from(this.microFilters.entries()).filter(e => e[1]).map(e => e[0]);
   }
 
 }

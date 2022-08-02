@@ -18,7 +18,7 @@
                     <a class="btn btn-secondary" [href]="youtubeVideo.link" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
                 </div>                
             </li>
-            <li class="list-group-item bg-secondary text-light">Keywords : <b>{{ youtubeVideo.getDisplayKeywords() }}</b></li>
+            <li class="list-group-item bg-secondary text-light">Keywords : <strong>{{ youtubeVideo.getDisplayKeywords() }}</strong></li>
         </ul>
     </div>
     <div id="controls" class="flex p-2" *ngIf="!loading" >
