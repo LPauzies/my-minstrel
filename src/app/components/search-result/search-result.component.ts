@@ -47,7 +47,7 @@ export class SearchResultComponent implements OnInit {
     if (this.microFilters.length > 0) {
       this.filteredVideos = this.filteredVideos.filter(
         // Check that at least one keyword is on filters chosen by user
-        e => e.keywords.find(keyword => this.microFilters.map(e => e.toLocaleLowerCase()).includes(keyword.toLocaleLowerCase()))
+        e => this.microFilters.every(filter => e.keywords.map(e => e.toLocaleLowerCase()).includes(filter.toLocaleLowerCase()))
       )
     }
     // If there is filters on search
