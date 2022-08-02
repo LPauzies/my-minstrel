@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { EventChangePlayerVideo } from 'src/app/components/search-result/search-result.component';
+import { EventSearchFilter } from 'src/app/components/search/search.component';
 import { YoutubeVideo } from 'src/app/domains/youtubeVideo';
 
 @Component({
@@ -16,19 +17,20 @@ export class HomeComponent implements OnInit {
   selectedYoutubeVideo!: YoutubeVideo;
 
   // Filters
-  filters: Array<string>;
   search: string;
+  macroFilter: string;
+  microFilters: Array<string>;
 
   constructor() {
     // First values by default
-    this.panelMarginTop = "24vh";
+    this.panelMarginTop = "32vh";
     this.panelHeight = "62vh";
-    this.filters = [];
     this.search = "";
+    this.macroFilter = "";
+    this.microFilters = [];
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   @HostListener('window:resize', ['$event'])
   onResize(event?: any) {
@@ -45,8 +47,9 @@ export class HomeComponent implements OnInit {
     this.selectedYoutubeVideo = event.youtubeVideo;
   }
 
-  toParent(event: any) {
-    this.filters = event.filters;
+  toParent(event: EventSearchFilter) {
+    this.macroFilter = event.macroFilter;
+    this.microFilters = event.microFilters;
     this.search = event.search;
   }
 

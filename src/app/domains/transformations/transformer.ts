@@ -6,7 +6,7 @@ export class Transformer {
     constructor() {}
 
     public static fromJSONtoYoutubeVideos(json: any): any {
-        return json.videos.map((e: any) => new YoutubeVideo(e.id, e.title, e.keywords));
+        return json.videos.map((e: any) => new YoutubeVideo(e.id, e.title, e.type, e.keywords));
     }
 
     public static fromJSONtoFilterMacro(json: any): Array<FilterVideo> {

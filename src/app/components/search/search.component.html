@@ -1,17 +1,17 @@
-<div class="p-2 container justify-content-center" role="search">
+<div class="p-1 container justify-content-center" role="search">
     <input [ngModel]="research" (ngModelChange)="onResearch($event)" class="form-control me-2" placeholder="{{ placeholderSearch }}" type="search" aria-label="search">
 </div>
-<div class="p-2 container-fluid">
+<div class="p-3 container-fluid">
     <div class="row">
-        <div class="col-3">
+        <div class="col-2">
             <div class="form-check" *ngFor="let macroFilter of macroFilters | keyvalue">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" [checked]="macroFilter.value">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  {{ macroFilter.key | uppercase }}
+                <input class="form-check-input" type="radio" name="macroFilter" [id]="macroFilter.key" [checked]="macroFilter.value" (change)="changeMacroFilter($event)">
+                <label class="form-check-label" for="macroFilter">
+                    {{ macroFilter.key | uppercase }}
                 </label>
             </div>
         </div>
-        <div class="col-9">
+        <div class="col-10">
             <div class="row row-cols-6">
                 <app-filter-badge *ngFor="let filter of microFilters | keyvalue"
                     [label]="filter.key"

@@ -18,7 +18,8 @@ export class SearchResultComponent implements OnInit {
   filteredVideos!: Array<YoutubeVideo>;
 
   // Input values from search bar
-  @Input() filters!: Array<string>;
+  @Input() macroFilter!: string;
+  @Input() microFilters!: Array<string>;
   @Input() search!: string;
 
   // Output
@@ -37,14 +38,16 @@ export class SearchResultComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     // Reset filter
-    this.filteredVideos = this.videos; 
+    this.filteredVideos = this.videos;
+    // Filter using macro filter
+    this.filteredVideos = this.videos.filter(e => e.type === this.macroFilter);
     // Create search filter
     let filterSearch = this.search.trim().split(" ").filter(e => e.trim() !== "");
-    // If there is filters on keyword
-    if (this.filters.length > 0) {
-      this.filteredVideos = this.videos.filter(
+    // Filter using micro filter
+    if (this.microFilters.length > 0) {
+      this.filteredVideos = this.filteredVideos.filter(
         // Check that at least one keyword is on filters chosen by user
-        e => e.keywords.find(keyword => this.filters.map(e => e.toLocaleLowerCase()).includes(keyword.toLocaleLowerCase()))
+        e => e.keywords.find(keyword => this.microFilters.map(e => e.toLocaleLowerCase()).includes(keyword.toLocaleLowerCase()))
       )
     }
     // If there is filters on search
@@ -55,17 +58,11 @@ export class SearchResultComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   emitFilterStatus(id: string) {
-    let video = this.getVideo(id);
+    let video = this.filteredVideos.find(e => e.id === id);
     if (video) this.changePlayerVideo.emit(new EventChangePlayerVideo(video));
-    console.log(this.filters);
-  }
-
-  getVideo(id: string): YoutubeVideo | undefined {
-    return this.filteredVideos.find(e => e.id === id);
   }
 
 }

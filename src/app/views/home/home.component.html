@@ -1,5 +1,5 @@
 <app-header id="header" class="position-fixed w-100" (changeSearchFilter)="toParent($event)"></app-header>
-<app-search-result id="panel" class="position-fixed w-100" [filters]="filters" [search]="search" [style.margin-top]="panelMarginTop" [style.height]="panelHeight" (changePlayerVideo)="updateVideoPlayer($event)"></app-search-result>
+<app-search-result id="panel" class="position-fixed w-100" [macroFilter]="macroFilter" [microFilters]="microFilters" [search]="search" [style.margin-top]="panelMarginTop" [style.height]="panelHeight" (changePlayerVideo)="updateVideoPlayer($event)"></app-search-result>
 <app-player 
 id="player" 
 class="position-fixed w-100"

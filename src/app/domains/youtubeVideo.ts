@@ -2,11 +2,13 @@ export class YoutubeVideo {
 
     _id: string;
     _title: string;
+    _type: string;
     _keywords: Array<string>;
 
-    constructor(id: string, title: string, keywords: Array<string>) {
+    constructor(id: string, title: string, type: string, keywords: Array<string>) {
         this._id = id;
         this._title = title;
+        this._type = type;
         this._keywords = keywords;
     }
 
@@ -14,6 +16,7 @@ export class YoutubeVideo {
     get link(): string { return `https://www.youtube.com/watch?v=${this._id}` }
     get thumbnail(): string { return `https://img.youtube.com/vi/${this._id}/0.jpg` }
     get title(): string { return this._title }
+    get type(): string { return this._type }
     get keywords(): Array<string> { return this._keywords }
 
     getDisplayKeywords(): string {
