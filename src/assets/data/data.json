@@ -1,16 +1,448 @@
 {
     "videos" : [
         {
-            "id": "mvcmDk5Pjok",
-            "title": "Kobold Junkyard | Clutter, Commotion, Mischief Fantasy RPG Ambience | 3 Hours",
+            "id": "5Z1CjNzeQ04",
+            "title": "Battle With Monsters And Magic | Dragons, Wizards, Ambience | 1 Hour #dnd",
             "type": "ambient",
-            "keywords": ["junkyard", "fantasy"]
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "VaKVLWZrG-4",
+            "title": "Battle With Magic | War Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "qolll-pomPo",
+            "title": "Battle With Monsters | Combat Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "2rcrrNwUphk",
+            "title": "Siege With Monsters And Magic | Trebuchets, Creatures, Spells, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "V_FimUxIhSg",
+            "title": "Army Marching | Medieval Ambience | 1 Hour #dnd #army",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "UYGc79SRjWg",
+            "title": "Raided Village | Destruction, Pillage, Crows, Despair, Burning, Ambience | 1 Hour #dnd #village",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "AeyuFHjRgGA",
+            "title": "Battlefield Ghosts | Fights, Undead, Memories, Unrest, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "underground"]
+        },
+        {
+            "id": "nEjMmL1nfsk",
+            "title": "Battle In the City | Distant Fight, Ruined District, Building Collapsing, Ambience | 1 Hour #dnd #village",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "medieval city"]
+        },
+        {
+            "id": "pliDSDhfDJM",
+            "title": "Battle Aftermath | Agonizing Fighters, Crows, Gravediggers, Corpses Burning, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted"]
+        },
+        {
+            "id": "41ID91zup7E",
+            "title": "Ruined city | Dogs, Crows, Fear, Fire | 1 hour",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "underground", "medieval city"]
+        },
+        {
+            "id": "v5c0zLmVZR4",
+            "title": "Arena Fight | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "z11ckQXF2HA",
+            "title": "City Razed By A Monster | Godzilla, Kaiju, Tarrasque, Destruction, RPG Ambience | 3 Hours #dnd #city",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "medieval city"]
+        },
+        {
+            "id": "imxILmKjjCQ",
+            "title": "Campfire At Night | Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "forest", "jungle"]
+        },
+        {
+            "id": "XUts4U8saJc",
+            "title": "Campfire At Dusk | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "forest", "jungle"]
+        },
+        {
+            "id": "rOAiDBTr-N8",
+            "title": "Desert Campfire | Relaxing Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "al1F0hURxhs",
+            "title": "Savannah Night Camp | Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "2Qwirzv90Ek",
+            "title": "Blizzard Campfire | Exploration, Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "cold", "planes"]
+        },
+        {
+            "id": "ZzWvIFyYT48",
+            "title": "Lively Tundra Campfire | Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "cold", "planes"]
+        },
+        {
+            "id": "QItlc1Lhfi0",
+            "title": "Jungle Campfire | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "jungle", "forest"]
+        },
+        {
+            "id": "PdUQ-fI0xok",
+            "title": "Sea Cave Campfire | Waves, Water, Nature, Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "ocean"]
+        },
+        {
+            "id": "n9fvcnkEyN8",
+            "title": "Desert Cave Campfire | Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "nwMquXfnpLw",
+            "title": "Abandoned Shack (With Fireplace) | Shelter, Wind, Swinging Lantern, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "haunted", "underground", "cold"]
+        },
+        {
+            "id": "N1_zGvlX1S0",
+            "title": "Humid Cave Campfire | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "cold"]
+        },
+        {
+            "id": "oMY4RkrwPKg",
+            "title": "Swamp Campfire | Nature ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "underground", "jungle", "haunted"]
         },
         {
             "id": "3ybetTY0ZSg",
             "title": "Watchtower Night | Campfire, Creaking, Crickets, Quiet ASMR Ambience | 3 Hours",
             "type": "ambient",
-            "keywords": ["campfire", "creaking", "crickets", "asmr"]
-        }
+            "keywords": ["campfire"]
+        },
+        {
+            "id": "7NAkS03vxkI",
+            "title": "Campfire Discussions | Chatter, Crickets, Immersive RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "medieval city"]
+        },
+        {
+            "id": "ie2fxiTSreQ",
+            "title": "Caravan Stop At Night | Campfire, Chatter, Crickets, Immersive RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "medieval city"]
+        },
+        {
+            "id": "569cwo9GX-w",
+            "title": "Ice Temple | Magic, Fantasy Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "cold", "exploration"]
+        },
+        {
+            "id": "Y2yT3vH8x7M",
+            "title": "Frozen Coast | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "ocean", "exploration"]
+        },
+        {
+            "id": "J4yp3l0EZPQ",
+            "title": "Taiga | Cold Forests, Skyrim, Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "forest", "exploration"]
+        },
+        {
+            "id": "RhvyGiJs120",
+            "title": "Frozen Tundra | Arctic Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "desert", "exploration"]
+        },
+        {
+            "id": "3mNs2IdWuZY",
+            "title": "Mountain Shelter | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "mountain", "exploration"]
+        },
+        {
+            "id": "cpGgQHAublY",
+            "title": "Blizzard | Winter Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["cold", "mountain", "exploration"]
+        },
+        {
+            "id": "4E-_Xpj0Mgo",
+            "title": "Windy Desert | Immersive, Realistic Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "exploration", "planes"]
+        },
+        {
+            "id": "8uRtW8lBe0I",
+            "title": "Bazaar | Oriental Market, Trade, Camels, Spices, Music, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "597U-UaVm-c",
+            "title": "Snake temple | Snakes, dangers, mystery, ruins, treasure | 1 hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "dungeon", "exploration"]
+        },
+        {
+            "id": "vWCs_v9axiI",
+            "title": "Desert Oasis | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "Zost8sfrQA8",
+            "title": "Desert Temple | Mysterious Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "dungeon", "exploration", "haunted"]
+        },
+        {
+            "id": "U-e_w9v0BwU",
+            "title": "Desert Canyon | Windy, Animals, Rocks, Noisy, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "2pP7orLxU4U",
+            "title": "Sandstorm | Desert ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "roVUD2e1fwM",
+            "title": "African Village | Authentic Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "p_rMe6MnzsM",
+            "title": "African City | Afrofantasy ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "GlOMCvl96cs",
+            "title": "Cursed Desert | Corrupted Lands Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["desert", "exploration", "underground", "haunted"]
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        },
+        {
+            "id": "",
+            "title": "",
+            "type": "ambient",
+            "keywords": []
+        }   
     ]
 }

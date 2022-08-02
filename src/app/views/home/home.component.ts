@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   constructor() {
     // First values by default
     this.panelMarginTop = "32vh";
-    this.panelHeight = "62vh";
+    this.panelHeight = "54vh";
     this.search = "";
     this.macroFilter = "";
     this.microFilters = [];
