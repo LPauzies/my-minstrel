@@ -1,5 +1,5 @@
 {
-  "name": "my-minstrel",
+  "name": "minstrel",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "@angular/youtube-player": "^14.1.0",
+    "angular-cli-ghpages": "^1.0.3",
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "ngx-rerender": "^1.1.0",
