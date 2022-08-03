@@ -15,7 +15,7 @@ jobs:
 
   - name: Setup node version
     uses: actions/setup-node@v1
-    with:²
+    with:
       node-version: "16.x"
 
   - name: Install
