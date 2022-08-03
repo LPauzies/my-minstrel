@@ -55,6 +55,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "baseHref": "https://lpauzies.github.io/Minstrel/",
               "outputHashing": "all"
             },
             "development": {

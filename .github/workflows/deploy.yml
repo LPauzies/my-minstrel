@@ -24,7 +24,7 @@ jobs:
       run: npm install -g @angular/cli@14.1.0 && npm install
 
     - name: Build Angular
-      run: npm run build
+      run: npm run build --production
 
     - name: Upload artifact to GitHub Actions
       uses: actions/upload-artifact@v2
