@@ -1,0 +1,27 @@
+name: Deploy Minstrel
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+
+  deploy:
+    name: Github Pages deployment
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout from master
+      uses: actions/checkout@v1
+
+    - name: Setup node version
+      uses: actions/setup-node@v1
+      with:
+        node-version: "16.x"
+
+    - name: Install
+      run: npm install
+
+    - name: Deploy to GitHub Pages
+      run: ng deploy --base-href=https://lpauzies.github.io/minstrel --message="Minstrel Deploy" --name=LPauzies --email=lucas.pauzies@hotmail.fr

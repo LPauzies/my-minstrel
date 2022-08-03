@@ -1,0 +1,1234 @@
+{
+    "videos" : [
+        {
+            "id": "5Z1CjNzeQ04",
+            "title": "Battle With Monsters And Magic | Dragons, Wizards, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "VaKVLWZrG-4",
+            "title": "Battle With Magic | War Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "qolll-pomPo",
+            "title": "Battle With Monsters | Combat Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "2rcrrNwUphk",
+            "title": "Siege With Monsters And Magic | Trebuchets, Creatures, Spells, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "V_FimUxIhSg",
+            "title": "Army Marching | Medieval Ambience | 1 Hour #dnd #army",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "UYGc79SRjWg",
+            "title": "Raided Village | Destruction, Pillage, Crows, Despair, Burning, Ambience | 1 Hour #dnd #village",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "AeyuFHjRgGA",
+            "title": "Battlefield Ghosts | Fights, Undead, Memories, Unrest, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "underground"]
+        },
+        {
+            "id": "nEjMmL1nfsk",
+            "title": "Battle In the City | Distant Fight, Ruined District, Building Collapsing, Ambience | 1 Hour #dnd #village",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "city"]
+        },
+        {
+            "id": "pliDSDhfDJM",
+            "title": "Battle Aftermath | Agonizing Fighters, Crows, Gravediggers, Corpses Burning, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted"]
+        },
+        {
+            "id": "41ID91zup7E",
+            "title": "Ruined city | Dogs, Crows, Fear, Fire | 1 hour",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "haunted", "underground", "city"]
+        },
+        {
+            "id": "v5c0zLmVZR4",
+            "title": "Arena Fight | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "z11ckQXF2HA",
+            "title": "City Razed By A Monster | Godzilla, Kaiju, Tarrasque, Destruction, RPG Ambience | 3 Hours #dnd #city",
+            "type": "ambient",
+            "keywords": ["battle", "fantasy", "city"]
+        },
+        {
+            "id": "imxILmKjjCQ",
+            "title": "Campfire At Night | Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "forest", "jungle"]
+        },
+        {
+            "id": "XUts4U8saJc",
+            "title": "Campfire At Dusk | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "forest", "jungle"]
+        },
+        {
+            "id": "rOAiDBTr-N8",
+            "title": "Desert Campfire | Relaxing Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "al1F0hURxhs",
+            "title": "Savannah Night Camp | Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "2Qwirzv90Ek",
+            "title": "Blizzard Campfire | Exploration, Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "cold", "planes"]
+        },
+        {
+            "id": "ZzWvIFyYT48",
+            "title": "Lively Tundra Campfire | Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "cold", "planes"]
+        },
+        {
+            "id": "QItlc1Lhfi0",
+            "title": "Jungle Campfire | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "jungle", "forest"]
+        },
+        {
+            "id": "PdUQ-fI0xok",
+            "title": "Sea Cave Campfire | Waves, Water, Nature, Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "ocean"]
+        },
+        {
+            "id": "n9fvcnkEyN8",
+            "title": "Desert Cave Campfire | Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "desert"]
+        },
+        {
+            "id": "nwMquXfnpLw",
+            "title": "Abandoned Shack (With Fireplace) | Shelter, Wind, Swinging Lantern, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["campfire", "haunted", "underground", "cold"]
+        },
+        {
+            "id": "N1_zGvlX1S0",
+            "title": "Humid Cave Campfire | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["campfire", "cold"]
+        },
+        {
+            "id": "oMY4RkrwPKg",
+            "title": "Swamp Campfire | Nature ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "underground", "jungle", "haunted"]
+        },
+        {
+            "id": "3ybetTY0ZSg",
+            "title": "Watchtower Night | Campfire, Creaking, Crickets, Quiet ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire"]
+        },
+        {
+            "id": "7NAkS03vxkI",
+            "title": "Campfire Discussions | Chatter, Crickets, Immersive RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "city"]
+        },
+        {
+            "id": "ie2fxiTSreQ",
+            "title": "Caravan Stop At Night | Campfire, Chatter, Crickets, Immersive RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "city"]
+        },
+        {
+            "id": "569cwo9GX-w",
+            "title": "Ice Temple | Magic, Fantasy Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "cold", "exploration"]
+        },
+        {
+            "id": "Y2yT3vH8x7M",
+            "title": "Frozen Coast | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "ocean", "exploration"]
+        },
+        {
+            "id": "J4yp3l0EZPQ",
+            "title": "Taiga | Cold Forests, Skyrim, Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "forest", "exploration"]
+        },
+        {
+            "id": "RhvyGiJs120",
+            "title": "Frozen Tundra | Arctic Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "desert", "exploration"]
+        },
+        {
+            "id": "3mNs2IdWuZY",
+            "title": "Mountain Shelter | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["cold", "mountain", "exploration"]
+        },
+        {
+            "id": "cpGgQHAublY",
+            "title": "Blizzard | Winter Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["cold", "mountain", "exploration"]
+        },
+        {
+            "id": "4E-_Xpj0Mgo",
+            "title": "Windy Desert | Immersive, Realistic Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "exploration", "planes"]
+        },
+        {
+            "id": "8uRtW8lBe0I",
+            "title": "Bazaar | Oriental Market, Trade, Camels, Spices, Music, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "597U-UaVm-c",
+            "title": "Snake temple | Snakes, dangers, mystery, ruins, treasure | 1 hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "dungeon", "exploration"]
+        },
+        {
+            "id": "vWCs_v9axiI",
+            "title": "Desert Oasis | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "Zost8sfrQA8",
+            "title": "Desert Temple | Mysterious Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "dungeon", "exploration", "haunted"]
+        },
+        {
+            "id": "U-e_w9v0BwU",
+            "title": "Desert Canyon | Windy, Animals, Rocks, Noisy, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "2pP7orLxU4U",
+            "title": "Sandstorm | Desert ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "roVUD2e1fwM",
+            "title": "African Village | Authentic Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "p_rMe6MnzsM",
+            "title": "African City | Afrofantasy ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["desert", "public place", "exploration"]
+        },
+        {
+            "id": "GlOMCvl96cs",
+            "title": "Cursed Desert | Corrupted Lands Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["desert", "exploration", "underground", "haunted"]
+        },
+        {
+            "id": "6AJBTgd8UFw",
+            "title": "Slave Camp | RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["desert", "exploration"]
+        },
+        {
+            "id": "u_bsvkXRV_4",
+            "title": "Desert Night Camp | Realistic, Voices, Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["desert", "exploration", "public place", "campfire"]
+        },
+        {
+            "id": "H0cF3t01T-w",
+            "title": "Dark Humid Cave | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "OKlEcZ_2dsI",
+            "title": "Dungeon Full Of Monsters | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "FVmWdIwjgKA",
+            "title": "Prison | Immersive Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "city", "exploration"]
+        },
+        {
+            "id": "4ZelokMWpCk",
+            "title": "Haunted Castle | Horror Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "haunted", "underground", "exploration"]
+        },
+        {
+            "id": "nhP7goJYSmc",
+            "title": "Generic Dungeon 1 | Mysterious Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "bUGyf79WmRA",
+            "title": "Generic Dungeon 2 | Eerie, Sinister, Dark, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "fIRIKg-WWCM",
+            "title": "Generic Dungeon 3 | Adventure, Danger, Undead, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "j6rCcTTOs1I",
+            "title": "Generic Dungeon 4 | Dark Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "haunted"]
+        },
+        {
+            "id": "dTyqNu4vAf4",
+            "title": "Cursed Greenhouse | Plants, Growing, Nature, Druids Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "forest", "haunted"]
+        },
+        {
+            "id": "YgWAUz7GIc4",
+            "title": "Dungeon Of The Undead | Eerie Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "haunted", "exploration", "underground"]
+        },
+        {
+            "id": "CSPjCl_7hXo",
+            "title": "Torchlit Dungeon | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "X3jY__ZNw9I",
+            "title": "Endless Labyrinth | Lost, Drones, Mystery, Maze Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "planes"]
+        },
+        {
+            "id": "muG-Zrta8sY",
+            "title": "The Hive | Insects, Bugs, Fear, Swarms, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration"]
+        },
+        {
+            "id": "kt8ubebnggM",
+            "title": "Memory court | Spooky, Haunted, Ghosts, Undead | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "underground", "haunted"]
+        },
+        {
+            "id": "upmAf3wWKKo",
+            "title": "Dungeon Room | Fantasy Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "vxnVGCbDDXg",
+            "title": "Belly of the Beast | Inside A Monster Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration"]
+        },
+        {
+            "id": "blGtCzuP0lo",
+            "title": "Temple of the Old One | Lovecraft Cthulhu ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "haunted", "underground"]
+        },
+        {
+            "id": "PFDBu6hU_9c",
+            "title": "Hall Of Horrors | Cthulhu Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "haunted"]
+        },
+        {
+            "id": "KjJQ4uTVvvg",
+            "title": "Dark Secrets | Cthulhu Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "haunted", "underground"]
+        },
+        {
+            "id": "mwm2f8_vYus",
+            "title": "Steampunk Castle | Victorian Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "steampunk", "exploration"]
+        },
+        {
+            "id": "oef3XIRUeII",
+            "title": "Haunted Mansion | Creepy Ambience | Curse Of Strahd | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "haunted", "exploration", "underground"]
+        },
+        {
+            "id": "TUCzY-6XjUo",
+            "title": "Crystal Dungeon | Mysterious Adventure Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "eqG-MeeCP4M",
+            "title": "Collapsing Mine | RPG Dungeon Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration", "underground", "mountain"]
+        },
+        {
+            "id": "_SVUwQ8C9Hg",
+            "title": "Underground Lake Rowboat | Cave, Dripping, Paddle, Fantasy ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean", "underground"]
+        },
+        {
+            "id": "knHOpHg3pL4",
+            "title": "Cursed Forest | Creepy ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["forest", "exploration", "haunted"]
+        },
+        {
+            "id": "xnyJUG797C0",
+            "title": "Windy Bamboo Forest | Nature, Relaxing, Tigers, Birds, Peaceful Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "-dDKzp_QA1o",
+            "title": "Forest Shrine | Magic, Enchanted, Nature, Faeries, Relaxing Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "HiOSdOn1pcs",
+            "title": "Mushroom Forest | Trees, Birds, Mystery, Nature, Waterstream, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "DO26ygk7rcU",
+            "title": "Elven Tree City | Magical Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["forest", "city", "exploration", "public place"]
+        },
+        {
+            "id": "ZniSzJxwPXw",
+            "title": "Darkwood Village | Evil, Cult, Mysterious Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "city", "exploration", "haunted"]
+        },
+        {
+            "id": "tmQqzkfmwBE",
+            "title": "Unicorn Glade | Enchanted Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "HAw37tUHcOo",
+            "title": "Daytime Forest | Nature Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "TnYzfLUy18U",
+            "title": "Elven Forest | Magical Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "6SMhi8G_pSo",
+            "title": "Haunted Forest | Horror Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["forest", "haunted", "exploration"]
+        },
+        {
+            "id": "tZBV2JJ20Hw",
+            "title": "Moon Temple | Enchanted ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "exploration"]
+        },
+        {
+            "id": "ybTXj_OE4-k",
+            "title": "Night forest | Animals, Owls, Mystery, Nature",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "bftJ2fahn74",
+            "title": "Temple Of Life | Peaceful ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["forest", "exploration"]
+        },
+        {
+            "id": "PvXVf9rsXrs",
+            "title": "Elven Nobles' Garden | ASMR Ambience | 1 Hour #DnD #RPG",
+            "type": "ambient",
+            "keywords": ["forest", "exploration", "dungeon"]
+        },
+        {
+            "id": "Tw4ISHoXR9A",
+            "title": "Dragon Valley | Flight of the Dragons | Fantasy Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["forest", "mountain", "exploration"]
+        },
+        {
+            "id": "Mmt7fK90m4I",
+            "title": "Overgrown Ruins | Mysterious Jungle Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["jungle", "exploration"]
+        },
+        {
+            "id": "eWLDwkH71cM",
+            "title": "Jungle | Nature Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["jungle", "exploration"]
+        },
+        {
+            "id": "5Jzp5H4mQVE",
+            "title": "D&D Ambience | Mysterious Jungle | Immersive, Realistic, Animals",
+            "type": "ambient",
+            "keywords": ["jungle", "exploration"]
+        },
+        {
+            "id": "K_C0MqcofUA",
+            "title": "Natural exoplanet | Alien, Animals, Rain, Nature | 1 hour",
+            "type": "ambient",
+            "keywords": ["planes", "exploration", "forest", "jungle"]
+        },
+        {
+            "id": "jcjS3aIXEMY",
+            "title": "Jungle Village | People, Animals, Realistic Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["jungle", "exploration", "city"]
+        },
+        {
+            "id": "Lt3wrZ_DPGo",
+            "title": "Remote Rainforest (Raining) | Jungle Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["jungle", "exploration"]
+        },
+        {
+            "id": "WJrqwa6tMQY",
+            "title": "Fantasy Medieval City | Immersive Ambience | 1 Hour #DnD",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "Wd3kd0zY2bQ",
+            "title": "Medieval Village | Adventure Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "vHaWAxh8vzU",
+            "title": "Black Market | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city", "underground"]
+        },
+        {
+            "id": "b7bdcpbdjB4",
+            "title": "Alchemy Laboratory | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "t0AmfPQMs4k",
+            "title": "Medieval Harbor | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city", "ocean"]
+        },
+        {
+            "id": "uaX-2RMzVvQ",
+            "title": "Heroes Inn | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "hCVA_0vRisw",
+            "title": "Tinkerer's Workshop | Steampunk Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city", "steampunk"]
+        },
+        {
+            "id": "or7IiL1i5sE",
+            "title": "Carpenter's Workshop | Woodwork Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "pRkFl9j3NLk",
+            "title": "Blacksmith, Forge | Medieval Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "iM5kqv3ylhQ",
+            "title": "Steampunk City | Victorian Fantasy Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city", "steampunk", "public place"]
+        },
+        {
+            "id": "KecVJnJcSI4",
+            "title": "Crowded Tavern | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "F7k5rqeU6t8",
+            "title": "Mage Tower | Will You Discover Their Secrets? Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "B2cpoEx5ZUQ",
+            "title": "Mages' Guild | Wizards, Harry Potter, Spells, Artifacts, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "qj0boS-gQTY",
+            "title": "Baroque Noble Party | Baroque Music, People Speaking, Glasses Clinging, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "wPRIQMj94kE",
+            "title": "Mountain Village | Medieval, Peasants, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city", "mountain"]
+        },
+        {
+            "id": "1-i516hTgB8",
+            "title": "Decadent Noble Party | Baroque Ambience | Whips, Moans, Lust, Baroque Music",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "2ya2drfb4rA",
+            "title": "Building on Fire | Inferno Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city", "planes"]
+        },
+        {
+            "id": "FenYwtyhUzc",
+            "title": "Bathhouse, Therms | Calm, Relaxing ASMR Ambience | 1 Hour #DnD #RPG",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "vPk2W2L3Lbw",
+            "title": "Herbalist's Shop | ASMR Ambience | 1 Hour #DnD #rpg",
+            "type": "ambient",
+            "keywords": ["city"]
+        },
+        {
+            "id": "Qhi0hp-gcxI",
+            "title": "Plague | Medieval ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["city", "haunted"]
+        },
+        {
+            "id": "l73KCVASCeY",
+            "title": "Halfling Home | Hobbits, Chirping, Clocks, Cooking, Cozy ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["city", "mountain"]
+        },
+        {
+            "id": "IUe5cxsp9Q4",
+            "title": "Rooftops of the City | Distant, Chatter, Horses, Medieval ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "h5XrZcc5gjQ",
+            "title": "Elven Tavern | Elvish, Fireplace, Glassware, Elegant RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["city", "forest", "public place"]
+        },
+        {
+            "id": "EsyMNV1Ae6g",
+            "title": "Calm Tavern | Chatter, Cutlery, Fireplace, Laughter, Cozy ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "g2r3APSQY3c",
+            "title": "Dwarven Tavern | Ale, Chatter, Cutlery, Fantasy RPG Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["city", "public place"]
+        },
+        {
+            "id": "Nue1k5-yaEs",
+            "title": "Nightmare | Fear, Anguish, Horror, Vampires Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "planes", "haunted", "exploration"]
+        },
+        {
+            "id": "Jh9E7Cus7JA",
+            "title": "Shadowfell | Rumble, Eerie, Dark Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["dungeon", "planes", "haunted", "exploration"]
+        },
+        {
+            "id": "pdDJdfeY_xQ",
+            "title": "Gates Of Hell | Evil Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["dungeon", "planes", "haunted", "exploration"]
+        },
+        {
+            "id": "JzVIkY5tKcE",
+            "title": "D&D Ambience | Hell | Cries, Agony, Despair, Demons, Devils, Magma, Avernus",
+            "type": "ambient",
+            "keywords": ["exploration", "planes", "haunted"]
+        },
+        {
+            "id": "RG1ydqEEa0c",
+            "title": "Heaven | Holy Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "d3kAxuQSSdA",
+            "title": "The Void | Enigmatic, Mysterious Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes", "underground", "haunted"]
+        },
+        {
+            "id": "YRXCh3oIdX4",
+            "title": "Spirit World | Ethereal Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "-KLIpA0bwoo",
+            "title": "Dreamwalking | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "JiogkSyZrNE",
+            "title": "Clockwork Plane | Steampunk, Mechanus, Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "steampunk", "planes"]
+        },
+        {
+            "id": "3URQXeEf_7w",
+            "title": "Plane Of Earth | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "8T26WG593uU",
+            "title": "Plane Of Air | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "cA6fqZl1pYs",
+            "title": "Plane of Fire | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "BYfn8lgHlq4",
+            "title": "Plane of Water | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "901QKLEkW1o",
+            "title": "World Cosmic End | Apocalypse Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "9PqlPdTmu1k",
+            "title": "Acid Planet | Acid Gurgling, Aliens, Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["exploration", "planes"]
+        },
+        {
+            "id": "4W2EfqdOmiI",
+            "title": "On The Shore | Sea Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean"]
+        },
+        {
+            "id": "beOw8MEojQ4",
+            "title": "Sailing Ship | High Seas Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean"]
+        },
+        {
+            "id": "1u1ZXAYHiYQ",
+            "title": "Haunted Ship Interior | Horror Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean", "haunted"]
+        },
+        {
+            "id": "7JZ4uBJLJ60",
+            "title": "Ship Interior | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean"]
+        },
+        {
+            "id": "NrEiRL7VLhs",
+            "title": "Cove | Shore Perspective, Idle Ship, Pirates, Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean"]
+        },
+        {
+            "id": "Ues8oXEVOYc",
+            "title": "Campfire On The Shore | Nature ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["campfire", "ocean"]
+        },
+        {
+            "id": "L93zhTneGBU",
+            "title": "Underwater | Exploration Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "ocean", "planes"]
+        },
+        {
+            "id": "lvEl7Bn-720",
+            "title": "Sailing Airship | Steampunk ASMR Ambience | 1 Hour #DnD #RPG",
+            "type": "ambient",
+            "keywords": ["steampunk"]
+        },
+        {
+            "id": "8ceMOedFfbw",
+            "title": "Engineer's Office | Steampunk Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["steampunk"]
+        },
+        {
+            "id": "KCrUMNxTTaM",
+            "title": "Steampunk Submarine | Steampunk ASMR Ambience | 1 Hour #DnD #RPG",
+            "type": "ambient",
+            "keywords": ["steampunk"]
+        },
+        {
+            "id": "uyc4u6dh4Cs",
+            "title": "Engine Room | Steampunk Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["steampunk"]
+        },
+        {
+            "id": "O_EVR9HC95w",
+            "title": "Steam Train (No Passenger) | Calming Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["steampunk"]
+        },
+        {
+            "id": "Wglz90bLvNA",
+            "title": "Haunted Cemetery | Creepy ASMR Ambience | 3 Hours",
+            "type": "ambient",
+            "keywords": ["exploration", "haunted"]
+        },
+        {
+            "id": "9DMvOFglC9A",
+            "title": "Graveyard | Haunted Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "haunted"]
+        },
+        {
+            "id": "z8jePVQtz0s",
+            "title": "City Overrun by Zombies | Stressing ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "haunted"]
+        },
+        {
+            "id": "X399wHVZFng",
+            "title": "Temple Of The Dead | Necromancy ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "haunted", "dungeon"]
+        },
+        {
+            "id": "7ElGv7zMqeY",
+            "title": "Darkest Forest | Adventure Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "haunted", "forest"]
+        },
+        {
+            "id": "gS0sNL82Tvk",
+            "title": "Deep Forge | Lava, Fire, Hammering, Metalsmith, Dwarven Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "underground"]
+        },
+        {
+            "id": "fUN-T3zwAYc",
+            "title": "Volcano Temple | Sacred ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "underground"]
+        },
+        {
+            "id": "fiH6dOvepK0",
+            "title": "Underdark | Subterrean, Grotto Ambience | 1 Hour #dnd",
+            "type": "ambient",
+            "keywords": ["exploration", "underground", "planes"]
+        },
+        {
+            "id": "TfdXgKdogTM",
+            "title": "Vault of Untold Treasures | ASMR Ambience | 1 Hour",
+            "type": "ambient",
+            "keywords": ["exploration", "underground"]
+        },
+        {
+            "id": "OgRpL2eKMjs",
+            "title": "RPG Exploration Music | A Promise",
+            "type": "music",
+            "keywords": ["exploration", "fantasy"]
+        },
+        {
+            "id": "GDsVPLwJ28Q",
+            "title": "RPG Exploration Music | Crown Of The Exiled Prince",
+            "type": "music",
+            "keywords": ["exploration", "fantasy"]
+        },
+        {
+            "id": "pbQuulkSOIU",
+            "title": "RPG Tavern Music | The Springvale Festival",
+            "type": "music",
+            "keywords": ["tavern"]
+        },
+        {
+            "id": "F1aKpoFFxYY",
+            "title": "RPG Exploration Music | The Wizard's Apprentice",
+            "type": "music",
+            "keywords": ["exploration", "mystery", "fantasy"]
+        },
+        {
+            "id": "rSrLTfp9VmY",
+            "title": "D&D RPG Forest Music Playlist | 1 Hour",
+            "type": "music",
+            "keywords": ["exploration", "fantasy", "forest"]
+        },
+        {
+            "id": "NLymF-CtvD4",
+            "title": "RPG Dungeon Music | Across The Desert Sea",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "battle", "fantasy"]
+        },
+        {
+            "id": "uaCFm9RYkQw",
+            "title": "RPG Exploration Music | Ashes & Bones",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "fantasy", "sci-fi", "mystery"]
+        },
+        {
+            "id": "-THDmotC8D0",
+            "title": "RPG Exploration Music | Ethereal Caverns",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "fantasy", "mystery"]
+        },
+        {
+            "id": "HWsp8yqqX-o",
+            "title": "RPG Combat Music | The Eternal War",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "1Noz18wJqlY",
+            "title": "RPG Combat Music | The Last Dragonlord",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "TsKtgTI8Z3w",
+            "title": "RPG Combat Music | The Rise Of The Valkyries",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "_g75ilY59sk",
+            "title": "RPG Exploration Music | Curse of the Jade Crown",
+            "type": "music",
+            "keywords": ["exploration", "fantasy", "forest", "mystery"]
+        },
+        {
+            "id": "ne8yl9-8-y8",
+            "title": "Relaxing/Study Celtic Music - The Druid's Journey",
+            "type": "music",
+            "keywords": ["exploration", "fantasy", "forest", "mystery"]
+        },
+        {
+            "id": "Vd8UQTx4i7c",
+            "title": "RPG Exploration Music | Under The Moon",
+            "type": "music",
+            "keywords": ["exploration", "fantasy", "mystery"]
+        },
+        {
+            "id": "JrdT_gabcs8",
+            "title": "RPG Tavern Music | The Drunken Siren",
+            "type": "music",
+            "keywords": ["tavern", "fantasy"]
+        },
+        {
+            "id": "4TaGZwXGlsI",
+            "title": "RPG Dungeon Music | Shades Of Torchlight",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "horror", "fantasy"]
+        },
+        {
+            "id": "TBCyMgbm6b4",
+            "title": "RPG Tavern Music | The Clans Reunited",
+            "type": "music",
+            "keywords": ["tavern", "fantasy"]
+        },
+        {
+            "id": "74HVD7Hx39U",
+            "title": "RPG Mystery Music | The Forbidden Garden",
+            "type": "music",
+            "keywords": ["exploration", "mystery", "sci-fi", "fantasy"]
+        },
+        {
+            "id": "d4YFEGel14M",
+            "title": "RPG Dungeon Music | Kobold Hideout",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "mystery", "fantasy"]
+        },
+        {
+            "id": "BQcmvZ8qu2c",
+            "title": "RPG Dungeon Music | Thieves' Guild",
+            "type": "music",
+            "keywords": ["exploration", "dungeon", "mystery", "fantasy"]
+        },
+        {
+            "id": "BQcmvZ8qu2c",
+            "title": "RPG Combat Music | Trials Of The Temple",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "yW8JLDcwr14",
+            "title": "RPG Nordic Music | Urdr",
+            "type": "music",
+            "keywords": ["battle", "nordic", "fantasy"]
+        },
+        {
+            "id": "AtuEfg7dbo8",
+            "title": "RPG Combat Music | Order Of Light & Shadow",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "tDz-uwHj5bk",
+            "title": "RPG Exploration Music | Rovan's Tavern",
+            "type": "music",
+            "keywords": ["tavern", "fantasy"]
+        },
+        {
+            "id": "511M-DVAqc4",
+            "title": "RPG Epic Combat Music | The Valkyries",
+            "type": "music",
+            "keywords": ["battle", "epic", "fantasy"]
+        },
+        {
+            "id": "-M7gVd9WFEs",
+            "title": "RPG Combat Music | Paladin's Resolve",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "5_IAMQGxZUg",
+            "title": "RPG Combat Music | Kingdoms & Conquerors",
+            "type": "music",
+            "keywords": ["battle", "epic", "fantasy"]
+        },
+        {
+            "id": "G4PvSOiUz-w",
+            "title": "RPG Combat Music | Hope",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "IifPuoG8FEY",
+            "title": "RPG Combat Music | Crimson Archers",
+            "type": "music",
+            "keywords": ["battle", "fantasy"]
+        },
+        {
+            "id": "7ShmzNIydNQ",
+            "title": "RPG Combat Music | Bones Of The Forsaken",
+            "type": "music",
+            "keywords": ["battle", "fantasy", "horror"]
+        },
+        {
+            "id": "Q7CSvvxBFOA",
+            "title": "RPG Combat Music | Momentum",
+            "type": "music",
+            "keywords": ["battle", "epic", "fantasy"]
+        },
+        {
+            "id": "z00CGyVSlOE",
+            "title": "RPG Gothic Music | Hounds Of The Forsaken Hollow",
+            "type": "music",
+            "keywords": ["horror", "fantasy", "exploration"]
+        },
+        {
+            "id": "0PlIwuwggM4",
+            "title": "RPG Tavern Music | A Unicorn Walks Into a Bar",
+            "type": "music",
+            "keywords": ["tavern", "fantasy"]
+        },
+        {
+            "id": "YAbDWpttMr0",
+            "title": "RPG Combat Music | Hour of the Witch",
+            "type": "music",
+            "keywords": ["battle", "horror", "fantasy", "epic"]
+        },
+        {
+            "id": "JkwXXi1gd5g",
+            "title": "RPG Combat Music | Dragon King of the South",
+            "type": "music",
+            "keywords": ["fantasy", "epic", "battle"]
+        },
+        {
+            "id": "FvolTM8teiQ",
+            "title": "RPG Battle Music | War Elephants",
+            "type": "music",
+            "keywords": ["fantasy", "battle"]
+        },
+        {
+            "id": "vyKJL6g2Puk",
+            "title": "Magical Fantasy Music | University Of Magic Part 1",
+            "type": "music",
+            "keywords": ["fantasy", "exploration", "mystery"]
+        },
+        {
+            "id": "6oh7OZbfPHY",
+            "title": "Magical Fantasy Music | University Of Magic Part 2",
+            "type": "music",
+            "keywords": ["fantasy", "exploration", "mystery"]
+        },
+        {
+            "id": "A48QqpWKWG8",
+            "title": "D&D/RPG Combat Music Playlist | 1 Hour",
+            "type": "music",
+            "keywords": ["fantasy", "battle", "mystery", "epic"]
+        },
+        {
+            "id": "zUkuSkXJf_s",
+            "title": "Music to put you in a heroic mood • BATTLE OF GODS",
+            "type": "music",
+            "keywords": ["fantasy", "battle", "epic"]
+        },
+        {
+            "id": "fwW6DGYEw88",
+            "title": "RPG Minor Battle Music | Ambush | D&D Instrumental | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "battle"]
+        },
+        {
+            "id": "5lZwy_yGVeM",
+            "title": "Faceless Beast | Epic, Intense, Horror Music",
+            "type": "music",
+            "keywords": ["fantasy", "horror", "epic"]
+        },
+        {
+            "id": "aW9wBjkpWIE",
+            "title": "CURSED - Epic Horror Music Mix | Dark Intense Hybrid Horror Music",
+            "type": "music",
+            "keywords": ["fantasy", "horror", "epic"]
+        },
+        {
+            "id": "TAnoryONNWI",
+            "title": "Dark Victorian Music | Horror, Ghosts, Haunting | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "horror", "exploration"]
+        },
+        {
+            "id": "Z6ylGHfLrdI",
+            "title": "Darkness Ambient - Horror Background Music + Ambience 10 Hours",
+            "type": "music",
+            "keywords": ["fantasy", "horror", "exploration"]
+        },
+        {
+            "id": "a0Av2XNPd_g",
+            "title": "Obscura | Dark Ambient Fantasy Music | RPG Dungeon Ambience | D&D Audio | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "horror", "exploration"]
+        },
+        {
+            "id": "qEzWqUhnbVA",
+            "title": "ATMOSPHERIC GOTHIC HORROR READING MUSIC | H.P Lovecraft, Stephen King, Edgar Allen Poe",
+            "type": "music",
+            "keywords": ["fantasy", "horror"]
+        },
+        {
+            "id": "wLlovxa3VJ0",
+            "title": "Fantasy Bard/Tavern Music Compilation",
+            "type": "music",
+            "keywords": ["fantasy", "tavern"]
+        },
+        {
+            "id": "y24kloPVSN4",
+            "title": "Mythical Village of Wizards | Music & Ambience",
+            "type": "music",
+            "keywords": ["fantasy", "exploration"]
+        },
+        {
+            "id": "bF-ayUbGtu4",
+            "title": "Medieval Fantasy Music – Medieval Market | Folk, Traditional, Instrumental | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "exploration"]
+        },
+        {
+            "id": "8GYL6c_GTE0",
+            "title": "The Witcher 3 | Medieval fantasy emotional and relaxing music | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "exploration"]
+        },
+        {
+            "id": "Da9S9yjZZP4",
+            "title": "Novigrad | Music & Ambience | The Witcher 3 | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "city"]
+        },
+        {
+            "id": "kNiOnMMxak0",
+            "title": "The Witcher 3 | White Orchard | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "city"]
+        },
+        {
+            "id": "IyOAoj_Qzjc",
+            "title": "The Witcher 3 | TOUSSAINT AMBIENT MUSIC | 1 hour",
+            "type": "music",
+            "keywords": ["fantasy", "city"]
+        }
+    ]
+}

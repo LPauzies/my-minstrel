@@ -1,0 +1,11 @@
+<div class="container-fluid">
+    <div class="row row-cols-5">
+        <app-video-card *ngFor="let video of filteredVideos" 
+        class="col"
+        [id]="video.id"
+        (click)="emitFilterStatus(video.id)"
+        [youtubeVideo]="video"
+        >
+        </app-video-card>
+    </div>
+</div>
