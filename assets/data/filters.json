@@ -1,0 +1,37 @@
+{
+    "filters": {
+        "music": [
+            "exploration",
+            "tavern",
+            "dungeon",
+            "mystery",
+            "battle",
+            "forest",
+            "sci-fi",
+            "fantasy",
+            "steampunk",
+            "horror",
+            "nordic",
+            "epic",
+            "city"
+        ],
+        "ambient": [
+            "battle",
+            "campfire",
+            "exploration",
+            "public place",
+            "cold",
+            "desert",
+            "dungeon",
+            "forest",
+            "jungle",
+            "ocean",
+            "moutain",
+            "city",
+            "planes",
+            "steampunk",
+            "haunted",
+            "underground"
+        ]
+    }
+}
