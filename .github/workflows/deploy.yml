@@ -6,20 +6,22 @@ on:
       - master
 
 jobs:
-  name: Github Pages deployment
-  runs-on: ubuntu-latest
-  steps:
 
-  - name: Checkout from master
-    uses: actions/checkout@v1
+  deploy:
+    name: Github Pages deployment
+    runs-on: ubuntu-latest
+    steps:
 
-  - name: Setup node version
-    uses: actions/setup-node@v1
-    with:
-      node-version: "16.x"
+    - name: Checkout from master
+      uses: actions/checkout@v1
 
-  - name: Install
-    run: npm install
+    - name: Setup node version
+      uses: actions/setup-node@v1
+      with:
+        node-version: "16.x"
 
-  - name: Deploy to GitHub Pages
-    run: ng deploy --base-href=https://lpauzies.github.io/minstrel --message="Minstrel Deploy" --name=LPauzies --email=lucas.pauzies@hotmail.fr
+    - name: Install
+      run: npm install
+
+    - name: Deploy to GitHub Pages
+      run: ng deploy --base-href=https://lpauzies.github.io/minstrel --message="Minstrel Deploy" --name=LPauzies --email=lucas.pauzies@hotmail.fr
