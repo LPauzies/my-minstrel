@@ -33,6 +33,7 @@ jobs:
         path: dist/minstrel
 
   deploy:
+    needs: [build]
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
